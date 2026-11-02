@@ -1,0 +1,2 @@
+Hello from the custom module!
+This line was appended.

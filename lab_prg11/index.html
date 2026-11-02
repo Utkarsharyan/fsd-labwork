@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+
+    <h2>onclick</h2>
+    <button onclick="showClickMessage()">Click me</button>
+    <p id="clickMessage">The click message will appear here.</p>
+
+    <h2>onmouseover</h2>
+    <p onmouseover="showHoverMessage()">Move your mouse over this sentence.</p>
+    <p id="hoverMessage">The mouseover message will appear here.</p>
+
+    <h2>onfocus and onkeyup</h2>
+    <label for="nameInput">Click here and type something:</label>
+    <input id="nameInput" type="text" onfocus="showFocusMessage()" onkeyup="showKeyMessage()">
+    <p id="focusMessage">The focus message will appear here.</p>
+    <p id="keyMessage">The keyup message will appear here.</p>
+
+    <script>
+        function showClickMessage() {
+            document.getElementById("clickMessage").textContent = "The button was clicked!";
+        }
+
+        function showHoverMessage() {
+            document.getElementById("hoverMessage").textContent = "The mouse moved over the sentence!";
+        }
+
+        function showFocusMessage() {
+            document.getElementById("focusMessage").textContent = "The text box is focused.";
+        }
+
+        function showKeyMessage() {
+            document.getElementById("keyMessage").textContent = "You released a key. You typed: "
+                + document.getElementById("nameInput").value;
+        }
+    </script>
+</body>
+</html>

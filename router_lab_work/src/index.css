@@ -1,0 +1,36 @@
+:root {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #33313a;
+  background: #faf9fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --heading: #211d27;
+  --text: #45414c;
+  --muted: #716c78;
+  --border: #e7e4eb;
+  --accent: #7040c9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+#root {
+  min-height: 100vh;
+}

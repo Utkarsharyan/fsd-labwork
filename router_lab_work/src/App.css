@@ -1,0 +1,107 @@
+.app {
+  min-height: 100vh;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+
+.navigation {
+  width: min(100% - 40px, 760px);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.brand {
+  margin-right: auto;
+  color: var(--heading);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navigation a,
+.page a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navigation a {
+  padding: 8px 0;
+  color: var(--text);
+}
+
+.navigation a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.navigation a:hover,
+.page a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main {
+  width: min(100% - 40px, 760px);
+  margin: 0 auto;
+}
+
+.page {
+  padding: 42px 0;
+}
+
+.page h1 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 32px;
+  letter-spacing: -0.03em;
+}
+
+.page h2 {
+  margin: 30px 0 12px;
+  color: var(--heading);
+  font-size: 19px;
+}
+
+.page p {
+  margin: 12px 0;
+}
+
+.page-intro {
+  color: var(--muted);
+}
+
+.task-list {
+  padding-left: 22px;
+}
+
+.task-list li {
+  padding: 7px 0;
+}
+
+.preference {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.preference input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    gap: 16px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+}
